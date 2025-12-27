@@ -137,5 +137,20 @@ These insights can help Netflix enhance content strategy, improve recommendation
 ---
 
 ## 📁 Project Structure
+📦 Netflix-Data-Analysis
+│
+├── 📁 data
+│ └── netflix.csv
+│
+├── 📁 notebooks
+│ └── netflix_analysis.ipynb
+│
+├── 📁 sql
+│ └── netflix_queries.sql
+│
+├── 📁 reports
+│ └── Netflix__Project.pdf
+│
+└── README.md
 
 
