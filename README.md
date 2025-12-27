@@ -111,12 +111,16 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+---
+
 ## Graphs you can generate include:
 Line chart of movies per year.
 Bar chart of movie vs TV show count.
 Heatmaps.
 Genre distribution.
 Ratings distribution.
+
+----
 
 🛠 Tools & Technologies:
 Python
@@ -125,6 +129,8 @@ NumPy
 Matplotlib
 Seaborn
 Google Colab
+
+---
 
 🎯 Conclusion:
 This analysis helps understand Netflix’s:
