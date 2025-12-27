@@ -25,16 +25,16 @@ This project explores the dataset to uncover insights such as:
 The dataset contains **8807 rows** and **12 columns** with features such as:
 
 - `show_id`
-- `type` (Movie / TV Show)  
-- `title`  
-- `director`  
-- `cast`  
-- `country`  
-- `date_added`  
-- `release_year`  
-- `rating`  
-- `duration`  
-- `listed_in` (genre)  
+- `type`
+- `title`
+- `director`
+- `cast`
+- `country`
+- `date_added`
+- `release_year`
+- `rating`
+- `duration`
+- `listed_in`
 - `description`
 
 ---
@@ -52,9 +52,21 @@ Missing values were found in:
 
 ### Cleaning Steps:
 - Filled missing **director**, **cast**, and **country** with `"Unknown"`
-- Filled missing **rating** and **duration** with their **mode**
-- Filled missing **date_added** with the **most frequent date**
-- Ensured all columns have consistent data types
+- Filled missing **rating** and **duration** using **mode()**
+- Filled missing **date_added** using **mode()**
+- Converted column types where needed  
+- Removed outliers using **IQR technique**
+
+---
+
+## 🛠 Tools & Technologies Used
+
+- **Python**
+- **Jupyter Notebook / Google Colab**
+- **Pandas** for data cleaning and preprocessing  
+- **NumPy** for numerical operations  
+- **Matplotlib** for visualization  
+- **Seaborn** for advanced visualizations  
 
 ---
 
@@ -71,71 +83,59 @@ Missing values were found in:
 - Japan  
 
 ### ✔ Ratings Distribution
-Most common ratings:
-- **TV-MA**
-- **TV-14**
-- **TV-PG**
-- **R**
+- TV-MA  
+- TV-14  
+- TV-PG  
+- R  
 
 ### ✔ Unique Values
-- **Directors:** 4528  
-- **Cast Members:** 7693  
-- **Titles:** 8807  
-- **Release Years:** 74  
+- Directors: 4528  
+- Cast Members: 7693  
+- Titles: 8807  
+- Release Years: 74  
 
 ---
 
 ## 🔍 Key Insights & Queries
 
-### 📌 1. Movies Released Per Year (Last 30 Years)
-A line chart shows a massive increase in movies added to Netflix especially between **2015–2019**.
+### 1️⃣ **Movies Released Per Year**
+Shows rapid growth after 2010, peaking around 2018–2020.
 
-### 📌 2. Movies vs TV Shows Comparison
-Movies dominate the platform with more than **69%** share.
+### 2️⃣ **Movies vs TV Shows**
+Movies make up **69%** of Netflix’s library.
 
-### 📌 3. Country-wise Content Distribution
-USA and India produce the highest number of titles on Netflix.
+### 3️⃣ **Country-wise Content**
+USA and India contribute the most.
 
-### 📌 4. Most Popular Ratings Category
-**TV-MA** is the most common rating on Netflix.
-
----
-
-## 📈 Visualizations (Python Code Included)
-
-The project uses:
-
-```python
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+### 4️⃣ **Ratings Popularity**
+Most titles fall under **TV-MA** and **TV-14**.
 
 ---
 
-## Graphs you can generate include:
-Line chart of movies per year.
-Bar chart of movie vs TV show count.
-Heatmaps.
-Genre distribution.
-Ratings distribution.
+## 📈 Visualizations Included
 
-----
-
-🛠 Tools & Technologies:
-Python
-Pandas
-NumPy
-Matplotlib
-Seaborn
-Google Colab
+- Line charts (Year-wise movie releases)  
+- Bar charts (Movies vs TV Shows)  
+- Heatmaps (Correlation)  
+- Count plots (Ratings, Genres)  
+- Boxplots (Rating vs Release Year)  
 
 ---
 
-🎯 Conclusion:
-This analysis helps understand Netflix’s:
-Content growth patterns.
-Viewer preferences.
-Most frequent countries, genres, and ratings.
-TV Show vs Movie share.
-These insights can support better content strategy, recommendation engines, and business decisions.
+## 🧠 Conclusion
+
+- ✔ **Movies dominate** Netflix’s content library (over 69%).  
+- ✔ Most titles are rated **TV-MA** or **TV-14**, showing focus on adult and teen audiences.  
+- ✔ **USA and India** produce the maximum content on Netflix.  
+- ✔ Netflix’s content has seen **major growth after 2015**.  
+- ✔ **Dramas, Documentaries, and Comedies** are the most common genres.  
+- ✔ Newer movies tend to be **shorter**, with a weak negative correlation between release year and duration.  
+- ✔ Netflix adds titles frequently, maintaining its global content diversity.  
+
+These insights can help Netflix enhance content strategy, improve recommendations, and target the right audience.
+
+---
+
+## 📁 Project Structure
+
+
